@@ -49,7 +49,7 @@ export const logMessage = (message: AIMessage) => {
     }
 
     // If has content, log it
-    if (message.content) {
+    if (message.content) {  
       console.log(`\n${color}[ASSISTANT]${reset}`)
       console.log(`${message.content}\n`)
     }
