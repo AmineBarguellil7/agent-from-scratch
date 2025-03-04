@@ -28,10 +28,9 @@ export const runAgent = async ({
     }
 
     if (response.tool_calls) {
-
       const toolCall = response.tool_calls[0]
 
-      logMessage(response)  
+      logMessage(response)
 
       loader.update(`executing : ${toolCall.function.name}`)
 
@@ -41,6 +40,5 @@ export const runAgent = async ({
 
       loader.update(`${toolCall.function.name} done`)
     }
-
   }
 }
