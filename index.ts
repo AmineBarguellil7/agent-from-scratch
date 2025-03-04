@@ -1,6 +1,7 @@
 import 'dotenv/config'
 import { runAgent } from './src/agent'
 import { tools } from './src/tools'
+import { tools } from './src/tools'
 
 const userMessage = process.argv[2]
 
